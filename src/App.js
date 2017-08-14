@@ -60,6 +60,7 @@ class App extends Component {
   }
 
   handleCoin(e){
+    // no encontre una buena data que me regresara dias como en bitcoin
     console.log(e.target.value)
   }
   passCurrency(btc, eth) {
@@ -83,7 +84,6 @@ class App extends Component {
               <option value="eth">Ethereum</option>
             </select>
           </label>
-          <input type="submit" value="Submit" />
         </form>
         <div className='row'>
           <div className='popup'>

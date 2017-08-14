@@ -16,7 +16,7 @@ class EthTable extends Component {
                 // console.log("eth",a = data.data.ETH.USD,"btc",b= data.data.BTC.USD)
                 <tr key={data.fecha}>
                     <Fecha date={data} />
-                    <td>$ {data.data.ETH.EUR}</td>
+                    <td>$ {data.data.ETH.USD}</td>
                     <td>$ {data.data.ETH.EUR}</td>
                     <td>{(data.data.ETH.USD / data.data.BTC.USD).toFixed(4) }</td>
                 </tr>
