@@ -11,10 +11,10 @@ class BtcTable extends Component {
 
     renderData() {
 
-        return this.props.value.map((data) => {
+        return this.props.value.map((data, i) => {
             return (
                 // console.log(data.data.BTC.USD)
-                <tr key={data.fecha}>
+                <tr key={i}>
                     <Fecha date={data} />
                     <td>$ {data.data.BTC.USD}</td>                  
                     <td>$ {data.data.BTC.EUR}</td>                  
